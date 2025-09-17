@@ -68,4 +68,11 @@ playwright-framework/
 3.  Run tests: `npx playwright test`
 4.  Open HTML report: `npx playwright show-report`
 
+# Page Object Model (POM) Implementation
+
+<img width="1329" height="1250" alt="Screenshot 2025-09-16 225319" src="https://github.com/user-attachments/assets/81bb6fd3-ee5f-4bdc-87ce-c1ac6ba235c0" />
+
+
+
+
 
