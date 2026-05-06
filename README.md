@@ -11,6 +11,10 @@ I am a Results‑driven QA Software Testing Analyst with experience in manual, a
 [![Faker.js](https://img.shields.io/badge/Faker.js-000000?style=for-the-badge&logo=faker&logoColor=white)](https://fakerjs.dev/)
 [![SheetJS](https://img.shields.io/badge/SheetJS-000000?style=for-the-badge&logo=xlsx&logoColor=white)](https://sheetjs.com/)
 [![axe-core](https://img.shields.io/badge/axe--core-000000?style=for-the-badge)](https://www.deque.com/axe/)
+[![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)](https://www.atlassian.com/software/jira)
+[![Confluence](https://img.shields.io/badge/Confluence-172BF4?style=for-the-badge&logo=confluence&logoColor=white)](https://www.atlassian.com/software/confluence)
+[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
+[![JMeter](https://img.shields.io/badge/JMeter-8C0000?style=for-the-badge&logo=apache-jmeter&logoColor=white)](https://jmeter.apache.org/)
 
 ---
 
