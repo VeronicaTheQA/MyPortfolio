@@ -1,0 +1,68 @@
+# Hi, I'm Veronica! 👋
+
+I am a Results-driven QA Software Testing Analyst with experience in manual, automated, performance, and accessibility testing across web, mobile, API, and enterprise platforms. I specialize in building reliable test strategies that improve software quality, data integrity, and user experience.
+
+## Skills
+
+- Testing Types: QA Testing, Regression, Smoke, UAT, API Testing, End-to-End Testing, Exploratory Testing, Mobile Testing, UI/UX Testing, Compatibility Testing, Performance Testing, Accessibility Testing, Section 508 Testing
+- Automation Tools: Playwright, Selenium, JMeter, Postman, axe-core, Faker.js, SheetJS, LoadRunner, BrowserStack, Charles Proxy
+- Languages: HTML, CSS, TypeScript, JavaScript, SQL
+- Databases: MySQL, PostgreSQL, Cosmos DB
+- Platforms: Azure DevOps, CI/CD, Jenkins, GitHub, GitLab, SAP, Salesforce
+- Management: Jira, Confluence, Zephyr, Trello, SDLC, STLC, Defect Tracking, Agile/Scrum
+
+## Featured Projects
+
+### Playwright Automation Framework
+A scalable test automation framework built with Playwright and TypeScript for UI, API, and regression testing.
+
+**Features**
+- Cross-browser testing.
+- Page Object Model design.
+- CI/CD-ready execution.
+- HTML reporting.
+
+**Installation**
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
+npm install
+npx playwright test
+```
+
+**Codegen**
+```bash
+npx playwright codegen https://your-url-here.com
+```
+
+**Reports**
+```bash
+npx playwright show-report
+```
+
+### Faker.js
+Generates realistic test data such as names, emails, and addresses.
+
+**Installation**
+```bash
+npm install @faker-js/faker --save-dev
+```
+
+### axe-core
+Performs accessibility checks for WCAG and Section 508 validation.
+
+**Installation**
+```bash
+npm install @axe-core/playwright --save-dev
+```
+
+### SheetJS
+Reads and validates Excel files used for test data and file verification.
+
+**Installation**
+```bash
+npm install xlsx
+```
+
+## Summary
+Results-driven QA Software Testing Analyst with experience in manual, automated, performance, and accessibility testing across web, mobile, API, and enterprise systems.
