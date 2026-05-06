@@ -1,78 +1,131 @@
-
 # Hi, I'm Veronica! 👋
 
-I am a Results-driven QA Software Testing Analyst with expertise in manual, automated, and performance testing across web, mobile, and API platforms. I am passionate about designing comprehensive test strategies that ensure software quality, security, and an exceptional user experience. My collaborative approach within Agile teams has consistently led to increased efficiency and higher customer satisfaction.
+I am a Results-driven QA Software Testing Analyst with experience in manual, automated, performance, and accessibility testing across web, mobile, API, and enterprise platforms. I specialize in building reliable test strategies that improve software quality, data integrity, and user experience.
 
-| Category | Skills |
-| :--- | :--- |
-| **Testing Types** | QA Testing, Regression, Smoke, UAT, API Testing, End-to-End, Exploratory, Mobile App, UI/UX, Compatibility, Performance![Playwright](https://img.shields.io/badge/Playwright-Informational?style=flat&logo=playwright&logoColor=white)
-| **Programming & Scripting** | HTML, CSS, TypeScript |
-| **Databases** | MySQL, PostgreSQL, Cosmos DB, Data Validation & Verification |
-| **API Tools** | Postman, REST API, Charles Proxy |
-| **Platforms & DevOps** | Azure DevOps, CI/CD, Jenkins, GitHub, GitLab, SAP, Salesforce, Android Studio, Xcode |
-| **Project Management** | Jira, Confluence, Zephyr, Trello, SDLC, STLC, Defect Tracking, Agile/Scrum |
-| **Soft Skills** | Problem-solving, Critical Thinking, Analytical, Decision-making, Communication, Project Management |
+---
 
-# My Projects
+## Skills
 
-# Automation Testing with Playwright's Codegen Tool
+- **Testing Types:** QA Testing, Regression, Smoke, UAT, API Testing, End-to-End Testing, Exploratory Testing, Mobile Testing, UI/UX Testing, Compatibility Testing, Performance Testing, Accessibility Testing, Section 508 Testing
+- **Automation & Testing Tools:** Playwright, Selenium, JMeter, Postman, axe-core, Faker.js, SheetJS, LoadRunner, BrowserStack, Charles Proxy
+- **Programming & Scripting:** HTML, CSS, TypeScript, JavaScript, SQL
+- **Databases:** MySQL, PostgreSQL, Cosmos DB, Data Validation & Verification
+- **Platforms & DevOps:** Azure DevOps, CI/CD, Jenkins, GitHub, GitLab, SAP, Salesforce, Android Studio, Xcode
+- **Project Management:** Jira, Confluence, Zephyr, Trello, SDLC, STLC, Defect Tracking, Agile/Scrum
+- **Soft Skills:** Problem-solving, Critical Thinking, Analytical Thinking, Decision-making, Communication, Project Management
 
-1. Click in the tests folder, then click on new file which you will see when hovering over the root folder's name
-2. In the terminal write the following script: npx playwright codegen, followed by the website link example in the video: npx playwright codegen (LINK)
+---
 
-Websites you can use for end to end testing
+## Playwright Test Automation Framework
 
-https://the-internet.heroukapp.com  
-https://www.saucedemo/v1/
+A scalable UI and API test automation framework built with Playwright and TypeScript. Designed for cross‑browser testing, CI/CD integration, and clear HTML reporting.
 
-3. Log in as a user would do, all actions are being recorded
-4. On the playwright inspector click on the copy to copy all actions, paste it into the playwright test file
-5. Click on the green checkmark to run the test in headless mode, meaning it is running in the background
+### Features
+- Cross-browser testing on Chromium, Firefox, and WebKit.  
+- UI and API test coverage.  
+- Page Object Model structure for maintainable code.  
+- HTML reports for test results.  
+- CI/CD-ready configuration.
 
-# Framework for theinternethero website
-
-# Playwright Web Automation Framework
-
-[![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)](https://playwright.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-
-A robust and scalable test automation framework built with Playwright and TypeScript. Demonstrates best practices for UI testing, API testing, and visual regression.
-
-## 🚀 Features
-
-- **Cross-Browser Testing**: Tests run on Chromium, Firefox, and WebKit.
-- **API Testing**: Examples of REST API request validation.
-- **Visual Regression Testing**: Screenshot comparisons to catch UI bugs.
-- **Parallel Execution**: Tests are configured to run in parallel for speed.
-- **CI/CD Integration**: Ready-to-use GitHub Actions workflow.
-- **HTML Reports**: Detailed and interactive post-execution reports.
-
-## 📁 Project Structure
-
-```
-playwright-framework/
-├── tests/
-│   ├── ui/                 # UI tests
-│   ├── api/                # API tests
-│   └── visual-regression/  # Visual tests
-├── pages/                  # Page Object Model classes
-├── helpers/                # Reusable helper functions
-├── fixtures/               # Test fixtures for setup/teardown
-└── playwright.config.ts    # Main configuration file
+### Installation
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
+npm install
+npx playwright test
 ```
 
-## 🛠️ Installation & Run
+### Codegen (Record & Generate Tests)
+Use Playwright Codegen to record user actions and generate test scripts.
 
-1.  Clone the repo: `git clone <your-repo-url>`
-2.  Install dependencies: `npm install`
-3.  Run tests: `npx playwright test`
-4.  Open HTML report: `npx playwright show-report`
+```bash
+npx playwright codegen https://your-url-here.com
+```
 
-# Page Object Model (POM) Implementation
+Workflow:
+1. Run the command above and open the browser.  
+2. Perform user actions (login, form fill, navigation).  
+3. Copy the generated code from the Playwright Inspector.  
+4. Paste into your test file and run.
 
-<img width="1329" height="1250" alt="Screenshot 2025-09-16 225319" src="https://github.com/user-attachments/assets/81bb6fd3-ee5f-4bdc-87ce-c1ac6ba235c0" />
+### Test Reports
+After test execution, open the HTML report:
 
+```bash
+npx playwright show-report
+```
 
+The report includes:
+- Test pass/fail status and execution time.  
+- Screenshots and error messages.  
+- Step‑by‑step test details for debugging.
 
+---
 
+## Test Data Tools
 
+### Faker.js – Dynamic Test Data
+Generates realistic names, emails, addresses, and other values for more robust test cases.
+
+**Installation**
+```bash
+npm install @faker-js/faker --save-dev
+```
+
+**Example**
+```ts
+import { faker } from '@faker-js/faker';
+
+const firstName = faker.person.firstName();
+const lastName = faker.person.lastName();
+const email = faker.internet.email();
+```
+
+---
+
+### axe-core – Accessibility Testing
+Validates accessibility compliance (WCAG / Section 508) in web applications.
+
+**Installation**
+```bash
+npm install @axe-core/playwright --save-dev
+```
+
+**Example**
+```ts
+import { test, expect } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+
+test('homepage accessibility check', async ({ page }) => {
+  await page.goto('https://example.com');
+  const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
+  expect(accessibilityScanResults.violations).toEqual([]);
+});
+```
+
+---
+
+### SheetJS – Excel & Data Validation
+Reads and validates Excel files for test data and report verification.
+
+**Installation**
+```bash
+npm install xlsx
+```
+
+**Example**
+```ts
+import * as XLSX from 'xlsx';
+
+const workbook = XLSX.readFile('test-data.xlsx');
+const sheetName = workbook.SheetNames;
+const sheet = workbook.Sheets[sheetName];
+const data = XLSX.utils.sheet_to_json(sheet);
+console.log(data);
+```
+
+---
+
+## Summary
+
+Results-driven QA Software Testing Analyst with experience in manual, automated, performance, and accessibility testing across web, mobile, API, and enterprise systems. Skilled in Playwright, Faker.js, axe-core, and SheetJS, with a strong focus on test data generation, accessibility validation, and end‑to‑end quality assurance in Agile environments.
